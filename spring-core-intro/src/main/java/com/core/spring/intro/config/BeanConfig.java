@@ -15,7 +15,7 @@ public class BeanConfig {
 
 	@Bean("getStudentPara")
 	public Student getStudentPara() {
-		return new Student("Ratna", "CSE", "123", 22);
+		return new Student();
 	}
 
 }
