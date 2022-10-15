@@ -10,7 +10,12 @@ public class KafkaTopicConfiguration {
 
 	@Bean
 	public NewTopic applicationEventTopic() {
-		return TopicBuilder.name("application-events").partitions(3).build();
+		return TopicBuilder.name("application-events").build();
+	}
+
+	@Bean
+	public NewTopic applicationEventTopicJson() {
+		return TopicBuilder.name("application-events-json").build();
 	}
 
 }

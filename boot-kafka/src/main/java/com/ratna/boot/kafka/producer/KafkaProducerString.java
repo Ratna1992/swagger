@@ -7,21 +7,20 @@ import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
 import com.ratna.boot.kafka.config.KafkaTopicConfiguration;
-import com.ratna.boot.kafka.model.ApplicationEvent;
 
 @Service
-public class KafkaProducer {
+public class KafkaProducerString {
 
-	private static final Logger LOGGER = LoggerFactory.getLogger(KafkaProducer.class);
+	private static final Logger LOGGER = LoggerFactory.getLogger(KafkaProducerString.class);
 
 	@Autowired
-	private KafkaTemplate<String, ApplicationEvent> kafkaTemplate;
+	private KafkaTemplate<String, String> kafkaTemplate;
 	@Autowired
 	private KafkaTopicConfiguration kafkaTopicConfiguration;
 
-	public void sendMessage(ApplicationEvent event) {
-		LOGGER.info("Event Data", event);
-		kafkaTemplate.send(kafkaTopicConfiguration.applicationEventTopic().name(), event);
+	public void sendMessage(String message) {
+		LOGGER.info("Message Produced " + message);
+		kafkaTemplate.send(kafkaTopicConfiguration.applicationEventTopic().name(), message);
 	}
 
 }
