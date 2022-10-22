@@ -24,4 +24,9 @@ public class StudentDAO {
 		return template.getSession().createCriteria(Student.class).list();
 
 	}
+
+	public Student getStudentById(Integer id) {
+		return template.getSession().get(Student.class, id);
+
+	}
 }

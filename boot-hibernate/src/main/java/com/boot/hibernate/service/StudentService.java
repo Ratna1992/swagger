@@ -27,4 +27,9 @@ public class StudentService {
 		return studentDAO.getStudents();
 	}
 
+	public Student getStudentById(Integer id) {
+		// TODO Auto-generated method stub
+		return studentDAO.getStudentById(id);
+	}
+
 }
