@@ -1,5 +1,6 @@
 package com.boot.hibernate.dao;
 
+import java.io.Serializable;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,8 +15,8 @@ public class StudentDAO {
 	@Autowired
 	SessionTemplate template;
 
-	public void saveStudent(Student student) {
-		template.getSession().save(student);
+	public Serializable saveStudent(Student student) {
+		return template.getSession().save(student);
 	}
 
 	@SuppressWarnings({ "deprecation", "unchecked" })

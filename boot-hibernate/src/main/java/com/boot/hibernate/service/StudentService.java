@@ -1,5 +1,6 @@
 package com.boot.hibernate.service;
 
+import java.io.Serializable;
 import java.util.List;
 
 import javax.transaction.Transactional;
@@ -18,8 +19,8 @@ public class StudentService {
 	StudentDAO studentDAO;
 
 	public String saveStudent(Student student) {
-		studentDAO.saveStudent(student);
-		return "saved sucessfully";
+		Serializable saveStudent = studentDAO.saveStudent(student);
+		return "saved sucessfully with Id " + saveStudent;
 	}
 
 	public List<Student> getStudents() {
