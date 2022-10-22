@@ -26,7 +26,8 @@ public class StudentDAO {
 	}
 
 	public Student getStudentById(Integer id) {
-		return template.getSession().get(Student.class, id);
+		Student student = template.getSession().get(Student.class, id);
+		return student;
 
 	}
 }
