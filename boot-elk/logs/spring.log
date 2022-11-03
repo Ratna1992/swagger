@@ -1,0 +1,22 @@
+2022-10-28 12:04:08.756  INFO 3248 --- [main] com.boot.elk.BootElkApplication          : Starting BootElkApplication using Java 13.0.2 on DESKTOP-QDB80TR with PID 3248 (E:\git-repo\spring\boot-elk\target\classes started by Ratna Lilly in E:\git-repo\spring\boot-elk)
+2022-10-28 12:04:08.763  INFO 3248 --- [main] com.boot.elk.BootElkApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-10-28 12:04:09.979  INFO 3248 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2022-10-28 12:04:09.990  INFO 3248 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-28 12:04:09.991  INFO 3248 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-10-28 12:04:10.104  INFO 3248 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-28 12:04:10.104  INFO 3248 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1276 ms
+2022-10-28 12:04:10.727  INFO 3248 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2022-10-28 12:04:10.743  INFO 3248 --- [main] com.boot.elk.BootElkApplication          : Started BootElkApplication in 2.506 seconds (JVM running for 3.619)
+2022-10-28 12:04:28.446  INFO 3248 --- [http-nio-9999-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-28 12:04:28.447  INFO 3248 --- [http-nio-9999-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-28 12:04:28.448  INFO 3248 --- [http-nio-9999-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-10-28 12:04:28.488  INFO 3248 --- [http-nio-9999-exec-2] com.boot.elk.service.ELKService          : record found : ELKModel [id=1, timestamp=2022:10:28:00:00:00, exception=Null pointer, module=boot-elk]
+2022-10-28 12:10:54.118  INFO 10840 --- [main] com.boot.elk.BootElkApplication          : Starting BootElkApplication using Java 13.0.2 on DESKTOP-QDB80TR with PID 10840 (E:\git-repo\spring\boot-elk\target\classes started by Ratna Lilly in E:\git-repo\spring\boot-elk)
+2022-10-28 12:10:54.124  INFO 10840 --- [main] com.boot.elk.BootElkApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-10-28 12:10:55.278  INFO 10840 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2022-10-28 12:10:55.335  INFO 10840 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-28 12:10:55.336  INFO 10840 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-10-28 12:10:55.498  INFO 10840 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-28 12:10:55.498  INFO 10840 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1304 ms
+2022-10-28 12:10:56.043  INFO 10840 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2022-10-28 12:10:56.055  INFO 10840 --- [main] com.boot.elk.BootElkApplication          : Started BootElkApplication in 2.442 seconds (JVM running for 3.425)
