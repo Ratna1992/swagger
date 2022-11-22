@@ -88,4 +88,9 @@ public class BookServiceImpl implements BookService {
 		return repo.getBooksByAuthorRegEx(author);
 	}
 
+	@Override
+	public List<Book> getBooksByCostBetween(Double costGt, Double costLt) {
+		return repo.getBooksByCostBetween(costGt, costLt);
+	}
+
 }

@@ -31,5 +31,7 @@ public interface BookService {
 	List<Book> getBookNameAndAuthorByPages(Integer pages);
 	
 	List<Book> getBooksByAuthorRegEx(String author);
+	
+	List<Book> getBooksByCostBetween(Double costGt, Double costLt);
 
 }

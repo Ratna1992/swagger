@@ -47,4 +47,7 @@ public interface BookRepository extends MongoRepository<Book, Integer> {
 //------------------MongoDB Regular Expressions--------------------------------------
 	@Query("{ author : { $regex : ?0 } }")
 	List<Book> getBooksByAuthorRegEx(String author);
+
+	@Query("{cost:{ $gt:?0,$lt:?1}}")
+	List<Book> getBooksByCostBetween(Double costGt, Double costLt);
 }

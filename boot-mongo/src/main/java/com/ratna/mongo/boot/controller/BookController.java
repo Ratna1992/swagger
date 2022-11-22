@@ -83,4 +83,10 @@ public class BookController {
 	public List<Book> getBooksByAuthorRegEx(@PathVariable("author") String author) {
 		return bookService.getBooksByAuthorRegEx(author);
 	}
+
+	@GetMapping("/btw/{costGt}/{costLt}")
+	public List<Book> getBooksByCostBetween(@PathVariable("costGt") Double costGt,
+			@PathVariable("costLt") Double costLt) {
+		return bookService.getBooksByCostBetween(costGt, costLt);
+	}
 }
