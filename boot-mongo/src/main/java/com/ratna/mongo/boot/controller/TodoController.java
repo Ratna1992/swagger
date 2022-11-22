@@ -77,4 +77,19 @@ public class TodoController {
 		return new ResponseEntity<List<TodoDTO>>(allTodos, !allTodos.isEmpty() ? HttpStatus.OK : HttpStatus.NOT_FOUND);
 	}
 
+	@GetMapping("/startwith/{todo}")
+	public ResponseEntity<?> findByTodoStartingWith(@PathVariable("todo") String todo) {
+		return new ResponseEntity<List<TodoDTO>>(todoService.findByTodoStartingWith(todo), HttpStatus.OK);
+	}
+
+	@GetMapping("/endwith/{todo}")
+	public ResponseEntity<?> findByTodoEndingWith(@PathVariable("todo") String todo) {
+		return new ResponseEntity<List<TodoDTO>>(todoService.findByTodoEndingWith(todo), HttpStatus.OK);
+	}
+
+	@GetMapping("/regex/{todo}")
+	public ResponseEntity<?> findTodosByRegex(@PathVariable("todo") String todo) {
+		return new ResponseEntity<List<TodoDTO>>(todoService.findTodosByRegex(todo), HttpStatus.OK);
+	}
+
 }

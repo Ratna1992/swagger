@@ -95,4 +95,19 @@ public class TodoServiceImpl implements TodoService {
 			return new ArrayList<>();
 		}
 	}
+
+	@Override
+	public List<TodoDTO> findTodosByRegex(String regex) {
+		return todoRepository.findTodosByRegexpName(regex);
+	}
+
+	@Override
+	public List<TodoDTO> findByTodoStartingWith(String todo) {
+		return todoRepository.findByTodoStartingWith(todo);
+	}
+
+	@Override
+	public List<TodoDTO> findByTodoEndingWith(String todo) {
+		return todoRepository.findByTodoEndingWith(todo);
+	}
 }

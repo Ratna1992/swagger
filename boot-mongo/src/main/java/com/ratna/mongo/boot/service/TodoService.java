@@ -17,9 +17,16 @@ public interface TodoService {
 
 	public TodoDTO getTodo(String id) throws TodoCollectionException;
 
-	public TodoDTO updateTodo(String id, TodoDTO todoDTO)throws  ConstraintViolationException, UnexpectedTypeException, TodoCollectionException;
+	public TodoDTO updateTodo(String id, TodoDTO todoDTO)
+			throws ConstraintViolationException, UnexpectedTypeException, TodoCollectionException;
 
 	public Boolean deleteTodo(String id);
-	
+
 	public List<TodoDTO> findTop3CompletedTodos(Boolean flag);
+
+	public List<TodoDTO> findTodosByRegex(String regex);
+
+	public List<TodoDTO> findByTodoStartingWith(String todo);
+
+	public List<TodoDTO> findByTodoEndingWith(String todo);
 }
